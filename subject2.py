@@ -17,8 +17,7 @@ while True:
     elif adventure == 2:
         adventure_tf = 2
         print("..........................................")
-        print("모험을 포기합니다.")
-        print("..........................................")
+        print("모험을 포기합니다..............")
         sys.exit()
 
     pikachu_hp = random.randrange(40, 48)
@@ -38,17 +37,17 @@ while True:
     bulbasaur_speed = random.randrange(6, 9)
 
     pikachu = Pikachu("피카츄", pikachu_hp, pikachu_power, 10, pikachu_speed)
-    charmander = Charmander("파이리", charmander_hp,
-                            charmander_power, 10, charmander_speed)
+    charmander = Charmander(
+        "파이리", charmander_hp, charmander_power, 10, charmander_speed
+    )
     squirtle = Squirtle("꼬부기", squirtle_hp, squirtle_power, 10, squirtle_speed)
-    bulbasaur = Bulbasaur("이상해씨", bulbasaur_hp,
-                          bulbasaur_power, 10, bulbasaur_speed)
+    bulbasaur = Bulbasaur("이상해씨", bulbasaur_hp, bulbasaur_power, 10, bulbasaur_speed)
 
     monsters = [
-        {'name': '피카츄', 'instance_name': pikachu},
-        {'name': '파이리', 'instance_name': charmander},
-        {'name': '꼬부기', 'instance_name': squirtle},
-        {'name': '이상해씨', 'instance_name': bulbasaur}
+        {"name": "피카츄", "instance_name": pikachu},
+        {"name": "파이리", "instance_name": charmander},
+        {"name": "꼬부기", "instance_name": squirtle},
+        {"name": "이상해씨", "instance_name": bulbasaur},
     ]
     time.sleep(1)
     print("")
@@ -117,26 +116,26 @@ while True:
     if select_character == 1:
         p_monster = pikachu
         wild_monster = random.choice([charmander, squirtle, bulbasaur])
-        print("-------------------------")
-        print("피카츄! 넌 내꺼야!")
+        print("-------------------------\n")
+        print("피카츄! 넌 내꺼야!!!\n")
         print("-------------------------\n")
     if select_character == 2:
         p_monster = charmander
         wild_monster = random.choice([pikachu, squirtle, bulbasaur])
-        print("-------------------------")
-        print("파이리! 넌 내꺼야!")
+        print("-------------------------\n")
+        print("파이리! 넌 내꺼야!\n")
         print("-------------------------\n")
     if select_character == 3:
         p_monster = squirtle
         wild_monster = random.choice([pikachu, charmander, bulbasaur])
-        print("-------------------------")
-        print("꼬부기! 넌 내꺼야!")
+        print("-------------------------\n")
+        print("꼬부기! 넌 내꺼야!\n")
         print("-------------------------\n")
     if select_character == 4:
         p_monster = bulbasaur
         wild_monster = random.choice([pikachu, charmander, squirtle])
-        print("-------------------------")
-        print("이상해씨! 넌 내꺼야!")
+        print("-------------------------\n")
+        print("이상해씨! 넌 내꺼야!\n")
         print("-------------------------\n")
 
     time.sleep(1)
@@ -153,9 +152,6 @@ while True:
     print(f"{player_name}: 오박사님 고마워요! 저는 이제 모험을 떠날게요! \n")
     time.sleep(2)
     print("오박시님: 그래! 행운을 빈다! \n")
-    print("-----------------------------------------\n")
-    time.sleep(2)
-    print("모험을 시작합니다!\n")
     time.sleep(2)
     print("")
     print("")
@@ -184,29 +180,65 @@ while True:
         if select_character == 4:
             p_monster = bulbasaur
             wild_monster = random.choice([pikachu, charmander, squirtle])
-        print("모험을 계속합니다!\n")
-        print("몬스터를 잡을까요? 마을에 갈까요?")
-        hunt_or_town = int(input("1.사냥 / 2.마을"))
+        print("모험을 시작합니다!\n")
+        time.sleep(2)
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
+        time.sleep(1)
+        print("모험을 계속할까요? 마을로 갈까요?")
+        hunt_or_town = int(input("1.모험 / 2.마을     "))
         if hunt_or_town == 1:
-            time.sleep(2)
-            print("")
-            print("")
-            print("")
-            print("")
-            print("")
-            print("")
-            print("")
-            print("")
-            print("")
-            print("")
-            print("")
+            time.sleep(0.2)
+            print("^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print(" ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print(" ^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
+            time.sleep(0.4)
+            print(" ^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print(" ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
+            time.sleep(0.6)
+            print("^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print(" ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
+            time.sleep(0.8)
+            print("^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print(" ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print(" ^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
+            time.sleep(1)
+            print(" ^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print(" ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
+            time.sleep(1.5)
+            print("^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print(" ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
+            print("^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
             time.sleep(2)
             print("^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
             print("  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
             print(" ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
             print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
-            print(
-                " ^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
+            print(" ^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
             time.sleep(2)
             print(" ^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
             print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
@@ -219,11 +251,9 @@ while True:
             print(" ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
             print("^   ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^")
             print("^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^  ^^^\n")
-            time.sleep(2)
+            time.sleep(1)
             print("!\n")
-            time.sleep(0.5)
-            print("!\n")
-            time.sleep(0.5)
+            time.sleep(1)
             print("!\n")
             time.sleep(0.5)
             print("!\n")
@@ -252,7 +282,8 @@ while True:
                         print("내 포켓몬이 더 빠르다! 어떤 공격을 할까?")
                         time.sleep(0.5)
                         attack_input1 = int(
-                            input(f"1.몸통박치기 / 2.{p_monster.skill_name()}     "))
+                            input(f"1.몸통박치기 / 2.{p_monster.skill_name()}     ")
+                        )
                         print("")
                         if attack_input1 == 1:
                             time.sleep(2)
@@ -264,8 +295,7 @@ while True:
                                     time.sleep(2)
                                     p_monster.status()
                                     wild_monster.status()
-                                    print(
-                                        "-----------------------------------------")
+                                    print("-----------------------------------------")
                             elif p_monster.hp == 0 or wild_monster.hp == 0:
                                 time.sleep(2)
                                 p_monster.status()
@@ -274,8 +304,7 @@ while True:
                                 wild_monster.cure()
                                 time.sleep(2)
                                 print("배틀 종료! \n")
-                                print(
-                                    "----------------------------------------- \n")
+                                print("----------------------------------------- \n")
                                 time.sleep(2)
                                 break
                         elif attack_input1 == 2:
@@ -288,8 +317,7 @@ while True:
                                     time.sleep(2)
                                     p_monster.status()
                                     wild_monster.status()
-                                    print(
-                                        "-----------------------------------------")
+                                    print("-----------------------------------------")
                             elif p_monster.hp == 0 or wild_monster.hp == 0:
                                 time.sleep(2)
                                 p_monster.status()
@@ -298,8 +326,7 @@ while True:
                                 wild_monster.cure()
                                 time.sleep(2)
                                 print("배틀 종료! \n")
-                                print(
-                                    "-----------------------------------------\n")
+                                print("-----------------------------------------\n")
                                 time.sleep(2)
                                 break
 
@@ -307,7 +334,8 @@ while True:
                         print("상대 포켓몬이 더 빠르다! 어떤 공격을 할까?")
                         time.sleep(0.5)
                         attack_input2 = int(
-                            input(f"1.몸통박치기 / 2.{p_monster.skill_name()}     "))
+                            input(f"1.몸통박치기 / 2.{p_monster.skill_name()}     ")
+                        )
                         print("")
                         if attack_input2 == 1:
                             time.sleep(2)
@@ -319,8 +347,7 @@ while True:
                                     time.sleep(2)
                                     wild_monster.status()
                                     p_monster.status()
-                                    print(
-                                        "-----------------------------------------")
+                                    print("-----------------------------------------")
                             elif p_monster.hp == 0 or wild_monster.hp == 0:
                                 time.sleep(2)
                                 p_monster.status()
@@ -329,8 +356,7 @@ while True:
                                 wild_monster.cure()
                                 time.sleep(2)
                                 print("배틀 종료! \n")
-                                print(
-                                    "-----------------------------------------\n")
+                                print("-----------------------------------------\n")
                                 time.sleep(2)
                                 break
                         elif attack_input2 == 2:
@@ -343,8 +369,7 @@ while True:
                                     time.sleep(2)
                                     wild_monster.status()
                                     p_monster.status()
-                                    print(
-                                        "-----------------------------------------")
+                                    print("-----------------------------------------")
                             elif p_monster.hp == 0 or wild_monster.hp == 0:
                                 time.sleep(2)
                                 p_monster.status()
@@ -353,8 +378,7 @@ while True:
                                 wild_monster.cure()
                                 time.sleep(2)
                                 print("배틀 종료!\n")
-                                print(
-                                    "-----------------------------------------\n")
+                                print("-----------------------------------------\n")
                                 time.sleep(2)
                                 break
             elif fight_or_run == 2:
@@ -365,5 +389,5 @@ while True:
                 time.sleep(2)
 
         elif hunt_or_town == 2:
-            print("마을에 왔습니다 게임을 종료합니다.")
+            print("마을에 왔습니다! 이제 쉽시다!.")
             sys.exit()
